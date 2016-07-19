@@ -1,0 +1,28 @@
+import java.util.*;
+public class RuthilleArrayQueue {
+	public static void main (String[]args){
+		int num=0;
+		int Queue[] = new int[0]; 
+		Scanner input = new Scanner(System.in);
+		
+		
+		ArrayQueue snum = new ArrayQueue(10);
+		snum.showQueue();
+		
+		System.out.print("How many would you like to enqueue? : ");
+		num = input.nextInt();
+		Queue	= new int[num];
+		System.out.println("ENQUEUING\n");
+		for (int i=0;i<=num;i++){
+			snum.enqueue(i);	
+		}	
+		System.out.println("NEW QUEUE\n");
+		snum.showQueue();
+		
+		for (int i=0;i<num;i++){
+			snum.dequeue(i);	
+		}
+	}
+
+	}
+
